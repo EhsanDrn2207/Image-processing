@@ -27,7 +27,8 @@ while True:
 
         if len(lmlist1) > 8:  # Ensure the landmark list has enough points
             length, info, frame = detector.findDistance(lmlist1[4][:-1], lmlist1[8][:-1], frame)
-        
+            print(length)
+
         # Process the second hand if present
         if len(hands) > 1:
             hand2 = hands[1]
